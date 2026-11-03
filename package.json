@@ -1,0 +1,26 @@
+{
+  "name": "dsh-task-intake",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "description": "Task intake protocol: clarify and optimize every task before running it.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

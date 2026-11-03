@@ -1,0 +1,11 @@
+- insert:
+    - id: task-intake
+      name: 'dsh-task-intake'
+      config:
+        enabled: true
+        order: 9900
+        maxImprovements: 3
+        maxQuestionsPerTask: 1
+        priorArt: true
+        priorArtCandidates: 3
+        language: auto
